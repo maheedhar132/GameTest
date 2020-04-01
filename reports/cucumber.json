@@ -1,0 +1,570 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Successful Navigation of Team LeaderBoard",
+        "description": "",
+        "id": "menu-navigation;successful-navigation-of-team-leaderboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8368589817,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149629242,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Clicks on Team LeaderBoard",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Team_LeaderBoard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2208360311,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to Team LeaderBoard page",
+            "match": {
+              "location": "GameTest.user_is_redirected_to_Team_LeaderBoard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@InSprintTests"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Successful Navigation of Individual LeaderBoard",
+        "description": "",
+        "id": "menu-navigation;successful-navigation-of-individual-leaderboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7626196160,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132716482,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Clicks on Individual LeaderBoard",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Individual_LeaderBoard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2205549430,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is redirected to Individual LeaderBoard page",
+            "match": {
+              "location": "GameTest.user_is_redirected_to_Individual_LeaderBoard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@InSprintTests"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Successful Navigation of Team Rules",
+        "description": "",
+        "id": "menu-navigation;successful-navigation-of-team-rules",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7506900133,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393525619,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Clicks on Team Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Team_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2331909198,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is redirected to Team Rules page",
+            "match": {
+              "location": "GameTest.user_is_redirected_to_Team_Rules_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@InSprintTests"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Successful Navigation of Individual Rules",
+        "description": "",
+        "id": "menu-navigation;successful-navigation-of-individual-rules",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7642223626,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 168113843,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Clicks on Individual Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Individual_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2233094105,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User is redirected to Individual Rules page",
+            "match": {
+              "location": "GameTest.user_is_redirected_to_Individual_Rules_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@InSprintTests"
+          }
+        ]
+      }
+    ],
+    "name": "Menu Navigation",
+    "description": "",
+    "id": "menu-navigation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/a_MenuNavigation.feature",
+    "tags": [
+      {
+        "name": "@All",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@InSprintTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful Addition of a new Team Rule",
+        "description": "",
+        "id": "add-team-rule;successful-addition-of-a-new-team-rule",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7956082957,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 212833795,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Clicks on Team Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Team_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1196636904,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Clicks on Add Rule",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Add_Rule()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2319163653,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Mandatory details",
+            "match": {
+              "location": "GameTest.user_enters_Mandatory_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2165989508,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Message is displayed \"Rule applied successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rule applied successfully\"",
+                  "offset": 21
+                }
+              ],
+              "location": "GameTest.message_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Team Rule",
+    "description": "",
+    "id": "add-team-rule",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/b_AddTeamRule.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful Resetting of a Team Rule",
+        "description": "",
+        "id": "reset-team-rule;successful-resetting-of-a-team-rule",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8119924392,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239711939,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Clicks on Team Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Team_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2318534357,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Reset Rule",
+            "match": {
+              "location": "GameTest.user_clicks_on_Reset_Rule()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2266914040,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Message is displayed \"Data reset success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Data reset success\"",
+                  "offset": 21
+                }
+              ],
+              "location": "GameTest.message_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Reset Team Rule",
+    "description": "",
+    "id": "reset-team-rule",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/c_ResetTeamRule.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful Addition of a new Individual Rule",
+        "description": "",
+        "id": "add-individual-rule;successful-addition-of-a-new-individual-rule",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6984530615,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148291991,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Clicks on Individual Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Individual_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1245130296,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Clicks on Add Rule",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Add_Rule()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2430976565,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Mandatory details",
+            "match": {
+              "location": "GameTest.user_enters_Mandatory_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2507309267,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Message is displayed \"Rule applied successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rule applied successfully\"",
+                  "offset": 21
+                }
+              ],
+              "location": "GameTest.message_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Individual Rule",
+    "description": "",
+    "id": "add-individual-rule",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/d_AddIndividualRule.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful Resetting of a Individual Rule",
+        "description": "",
+        "id": "reset-individual-rule;successful-resetting-of-a-individual-rule",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7584715307,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "GameTest.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343989607,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Clicks on Individual Rules",
+            "match": {
+              "location": "GameTest.user_Clicks_on_Individual_Rules()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2097754787,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Reset Rule",
+            "match": {
+              "location": "GameTest.user_clicks_on_Reset_Rule()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2299022033,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Message is displayed \"Data reset success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Data reset success\"",
+                  "offset": 21
+                }
+              ],
+              "location": "GameTest.message_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Reset Individual Rule",
+    "description": "",
+    "id": "reset-individual-rule",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/e_ResetIndividualRule.feature",
+    "tags": []
+  }
+]

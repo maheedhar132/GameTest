@@ -1,0 +1,18 @@
+{
+  "tokenFile": "C:\\Sealights\\java-agent\\sltoken.txt",
+  "buildSessionId": "${env.SL_BLDSESSIONID}",
+  "createBuildSessionId": false,
+  "workspacepath": "${project.build.outputDirectory}",
+  "recursive": true,
+  "includeResources": true,
+  "testStage": "Unit Tests",
+  "labId": null,
+  "executionType": "testsonly",
+  "logEnabled": true,
+  "logDestination": "console",
+  "logLevel": "info",
+  "logFolder": "C:\\Sealights\\java-agent\\tmp",
+  "filesStorage": "C:\\Sealights\\java-agent\\tmp",
+  "sealightsJvmParams": {}, 
+  "enabled": true
+}
