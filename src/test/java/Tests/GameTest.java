@@ -23,7 +23,7 @@ public class GameTest {
 
     @Given("User is on Home Page")
     public void user_is_on_Home_Page() {
-        System.setProperty("webdriver.chrome.driver","C:\\Sealights\\Drig\\DigRigTest\\src\\test\\resources\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/'${JOB_NAME}'chromedriver.exe");
         DesiredCapabilities handleSSLErr = DesiredCapabilities.chrome();
         handleSSLErr.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
         driver = new ChromeDriver(handleSSLErr);
