@@ -1,6 +1,6 @@
 package Tests;
 
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -23,11 +23,11 @@ public class GameTest {
 
     @Given("User is on Home Page")
     public void user_is_on_Home_Page() {
-        System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/GameTest/GameTest/src/test/resources/Drivers/chromedriver.exe");
-        DesiredCapabilities handleSSLErr = DesiredCapabilities.chrome();
-        handleSSLErr.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
-        driver = new ChromeDriver(handleSSLErr);
-        // open=true;
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+        ChromeDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
