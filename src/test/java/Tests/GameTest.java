@@ -32,7 +32,7 @@ public class GameTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
-        driver.get("http://18.224.246.154:5030/#/");
+        driver.get("http://3.15.157.255:5030/#/");
     }
 
     @When("User Clicks on Team LeaderBoard")
@@ -43,7 +43,7 @@ public class GameTest {
 
     @Then("User is redirected to Team LeaderBoard page")
     public void user_is_redirected_to_Team_LeaderBoard_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://18.224.246.154:5030/#/teamDashBoard"));
+        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/teamDashBoard"));
         driver.close();
     }
 
@@ -55,7 +55,7 @@ public class GameTest {
 
     @Then("User is redirected to Individual LeaderBoard page")
     public void user_is_redirected_to_Individual_LeaderBoard_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://18.224.246.154:5030/#/individualDashBoard"));
+        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/individualDashBoard"));
         driver.close();
     }
 
@@ -67,13 +67,13 @@ public class GameTest {
 
     @Then("User is redirected to Team Rules page")
     public void user_is_redirected_to_Team_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://18.224.246.154:5030/#/teamRules"));
+        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/teamRules"));
         driver.close();
     }
 
     @Then("User is redirected to Individual Rules page")
     public void user_is_redirected_to_Individual_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://18.224.246.154:5030/#/individualRules"));
+        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/individualRules"));
         driver.close();
     }
 
