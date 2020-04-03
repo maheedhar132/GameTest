@@ -1,18 +1,18 @@
 {
-  "tokenFile": "C:\\Sealights\\java-agent\\sltoken.txt",
-  "buildSessionId": "${env.SL_BLDSESSIONID}",
+  "tokenFile": "/home/ubuntu/sltoken.txt",
+  "buildSessionId": "${env.SL_BUILD_SESSION_ID}",
   "createBuildSessionId": false,
   "workspacepath": "${project.build.outputDirectory}",
   "recursive": true,
   "includeResources": true,
-  "testStage": "Unit Tests",
+  "testStage": "Cucumber Selenium Test",
   "labId": null,
   "executionType": "testsonly",
   "logEnabled": true,
   "logDestination": "console",
   "logLevel": "info",
-  "logFolder": "C:\\Sealights\\java-agent\\tmp",
-  "filesStorage": "C:\\Sealights\\java-agent\\tmp",
+  "logFolder": "/tmp",
+  "filesStorage": "/tmp",
   "sealightsJvmParams": {}, 
   "enabled": true
 }
