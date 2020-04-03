@@ -1,6 +1,6 @@
 {
   "tokenFile": "/home/ubuntu/sltoken.txt",
-  "buildSessionId": "${env.SL_BUILD_SESSION_ID}",
+  "buildSessionId": "${SL_BUILD_SESSION_ID}",
   "createBuildSessionId": false,
   "workspacepath": "${project.build.outputDirectory}",
   "recursive": true,
