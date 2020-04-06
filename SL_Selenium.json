@@ -2,7 +2,7 @@
   "tokenFile": "/home/ubuntu/sltoken.txt",
   "buildSessionId": "${env.SL_BUILD_SESSION_ID}",
   "createBuildSessionId": false,
-  "workspacepath": "${project.build.outputDirectory}",
+  "workspacepath": "${project.build.outputDirectory}/GameTest",
   "recursive": true,
   "includeResources": true,
   "testStage": "Cucumber Selenium Test",
