@@ -1,5 +1,5 @@
 {
-  "tokenFile": "/home/ubuntu/sltoken.txt",
+  "tokenFile": "/home/ubuntu/node_sltoken.txt",
   "buildSessionId": "${env.SL_BUILD_SESSION_ID}",
   "createBuildSessionId": false,
   "workspacepath": "${project.build.outputDirectory}/GameTest",
