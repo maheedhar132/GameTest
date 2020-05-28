@@ -1,6 +1,6 @@
 {
   "tokenFile": "/home/ubuntu/node_sltoken.txt",
-  "buildSessionId": "${env.buildSessionId}",
+  "buildSessionIdfile": "buildSessionId",
   "createBuildSessionId": false,
   "workspacepath": "${project.build.outputDirectory}/GameTest",
   "recursive": true,
