@@ -43,7 +43,7 @@ public class GameTest {
 
     @Then("User is redirected to Team LeaderBoard page")
     public void user_is_redirected_to_Team_LeaderBoard_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/teamDashBoard"));
+        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")));
         driver.close();
     }
 
