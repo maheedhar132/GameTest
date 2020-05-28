@@ -55,7 +55,7 @@ public class GameTest {
 
     @Then("User is redirected to Individual LeaderBoard page")
     public void user_is_redirected_to_Individual_LeaderBoard_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/individualDashBoard"));
+        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualDashBoard"));
         driver.close();
     }
 
@@ -67,13 +67,13 @@ public class GameTest {
 
     @Then("User is redirected to Team Rules page")
     public void user_is_redirected_to_Team_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/teamRules"));
+        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"teamRules"));
         driver.close();
     }
 
     @Then("User is redirected to Individual Rules page")
     public void user_is_redirected_to_Individual_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://3.15.157.255:5030/#/individualRules"));
+        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualRules"));
         driver.close();
     }
 
