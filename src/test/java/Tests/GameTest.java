@@ -32,7 +32,7 @@ public class GameTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
-        driver.get("http://3.15.157.255:5030/#/");
+        driver.get(System.getProperty("url"));
     }
 
     @When("User Clicks on Team LeaderBoard")
