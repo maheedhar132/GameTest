@@ -5,7 +5,7 @@
   "workspacepath": "${project.build.outputDirectory}/GameTest",
   "recursive": true,
   "includeResources": true,
-  "testStage": "Cucumber Selenium Test",
+  "testStage": "Selenium Linux Test",
   "labId": null,
   "executionType": "testsonly",
   "logEnabled": false,
