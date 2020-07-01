@@ -44,6 +44,11 @@ public class GameTest {
     @Then("User is redirected to Team LeaderBoard page")
     public void user_is_redirected_to_Team_LeaderBoard_page() {
         Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"teamDashBoard"));
+        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
+        }
         driver.close();
     }
 
