@@ -29,7 +29,8 @@ public class GameTest {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--no-sandbox");
+                //chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-gpu");
          driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -64,6 +65,11 @@ public class GameTest {
     @Then("User is redirected to Individual LeaderBoard page")
     public void user_is_redirected_to_Individual_LeaderBoard_page() {
         Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualDashBoard"));
+                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
+        }
         driver.close();
     }
 
@@ -76,12 +82,22 @@ public class GameTest {
     @Then("User is redirected to Team Rules page")
     public void user_is_redirected_to_Team_Rules_page() {
         Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"teamRules"));
+                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
+        }
         driver.close();
     }
 
     @Then("User is redirected to Individual Rules page")
     public void user_is_redirected_to_Individual_Rules_page() {
         Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualRules"));
+                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
+        }
         driver.close();
     }
 
@@ -103,6 +119,11 @@ public class GameTest {
         String msg = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div[4]/div/div/div[1]")).getText();
         System.out.println(msg+"---"+string);
         Assert.assertEquals(msg,string);
+                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
+        }
         driver.close();
     }
 
