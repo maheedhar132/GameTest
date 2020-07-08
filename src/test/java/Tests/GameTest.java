@@ -28,13 +28,13 @@ public class GameTest {
     {
        
 		
-		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe"); //For Windows
-		//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //For Linux
+		//System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe"); //For Windows
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //For Linux
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
-        //chromeOptions.addArguments("--no-sandbox"); //For Linux
-        chromeOptions.addArguments("--disable-gpu"); //For Windows
+        chromeOptions.addArguments("--no-sandbox"); //For Linux
+        //chromeOptions.addArguments("--disable-gpu"); //For Windows
 		driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
