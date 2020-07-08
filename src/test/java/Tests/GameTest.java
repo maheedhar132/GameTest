@@ -18,23 +18,48 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 
+
 import java.util.concurrent.TimeUnit;
 
 public class GameTest {
     WebDriver driver;
 
-
-    @Given("User is on Home Page")
-    public void user_is_on_Home_Page() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                //chromeOptions.addArguments("--no-sandbox");
-                chromeOptions.addArguments("--disable-gpu");
-         driver = new ChromeDriver(chromeOptions);
+	public WebDriver initializeDriver()
+    {
+       
+		
+		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe"); //For Windows
+		//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //For Linux
+		
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        //chromeOptions.addArguments("--no-sandbox"); //For Linux
+        chromeOptions.addArguments("--disable-gpu"); //For Windows
+		driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+    	return driver;
+		
+       
+    }
+	
+	public void teardownDriver()
+	{
+		LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
+            try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+			}
+			 
+        }
+	}
+	
+    @Given("User is on Home Page")
+    public void user_is_on_Home_Page() {
+        
+		driver = initializeDriver();
 
         driver.get(System.getProperty("url"));
     }
@@ -48,12 +73,9 @@ public class GameTest {
     @Then("User is redirected to Team LeaderBoard page")
     public void user_is_redirected_to_Team_LeaderBoard_page() {
         Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"teamDashBoard"));
-        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
-        }
-        driver.close();
+        teardownDriver();
+        driver.close(); 
+		
     }
 
     @When("User Clicks on Individual LeaderBoard")
@@ -64,13 +86,9 @@ public class GameTest {
 
     @Then("User is redirected to Individual LeaderBoard page")
     public void user_is_redirected_to_Individual_LeaderBoard_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualDashBoard"));
-                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
-        }
-        driver.close();
+       teardownDriver();
+        driver.close(); 
+		
     }
 
     @When("User Clicks on Team Rules")
@@ -81,24 +99,16 @@ public class GameTest {
 
     @Then("User is redirected to Team Rules page")
     public void user_is_redirected_to_Team_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"teamRules"));
-                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
-        }
-        driver.close();
+       teardownDriver();
+        driver.close(); 
+		
     }
 
     @Then("User is redirected to Individual Rules page")
     public void user_is_redirected_to_Individual_Rules_page() {
-        Assert.assertTrue(driver.getCurrentUrl().equals(System.getProperty("url")+"individualRules"));
-                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
-        }
-        driver.close();
+       teardownDriver();
+        driver.close(); 
+		
     }
 
     @When("User Clicks on Add Rule")
@@ -118,13 +128,9 @@ public class GameTest {
 
         String msg = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div[4]/div/div/div[1]")).getText();
         System.out.println(msg+"---"+string);
-        Assert.assertEquals(msg,string);
-                LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            System.out.println( "Sealights " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
-        }
-        driver.close();
+        teardownDriver();
+        driver.close(); 
+		
     }
 
     @When("User clicks on Reset Rule")
@@ -138,4 +144,7 @@ public class GameTest {
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div/a[5]/span")).click();
 
     }
+	
+	
+	
 }
